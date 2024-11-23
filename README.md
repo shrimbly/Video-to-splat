@@ -1,6 +1,6 @@
 # Video Frame Extractor and Image Analysis Tool
 
-A powerful desktop application for extracting high-quality frames from videos and analyzing them for photogrammetry purposes. Built with Python and DearPyGui, this tool helps automate the process of selecting the best frames for 3D reconstruction.
+Windows application for extracting frames from videos and analyzing them for sharpness, grading, and alignment for 3DGS purposes. This project was built almost entirely in the cursor composer by a non-programmer, so, don't judge me on the code quality. Open to feedback and suggestions for new features, improvements, and bug fixes. 
 
 ## Features
 
@@ -29,8 +29,6 @@ A powerful desktop application for extracting high-quality frames from videos an
 - FFmpeg (must be in system PATH)
 - RealityCapture (optional, for 3D reconstruction)
 - Darktable (optional, for image processing)
-
-### Python Packages
 
 ## Installation Guide
 
