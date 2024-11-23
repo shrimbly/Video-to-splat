@@ -19,7 +19,7 @@ Windows application for extracting frames from videos and analyzing them for sha
 
 ### Integration
 - Direct integration with RealityCapture for 3D reconstruction
-- Darktable integration for advanced image processing
+- Darktable integration for image grading
 - Automatic project organization and file management
 
 ## Requirements
