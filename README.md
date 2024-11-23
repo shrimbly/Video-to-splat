@@ -70,8 +70,11 @@ Windows application for extracting frames from videos and analyzing them for sha
    ```powershell
    pip install -r requirements.txt
    ```
-
-### Advanced Installation (Optional)
+6. **Run it**
+   ```powershell
+   python main.py
+   ```
+### Config
 
 1. **RealityCapture Integration**
    - Install RealityCapture
