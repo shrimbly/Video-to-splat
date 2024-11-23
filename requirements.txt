@@ -1,0 +1,21 @@
+# Core dependencies
+opencv-python>=4.8.0  # Image processing
+numpy>=1.24.0        # Numerical operations
+dearpygui>=1.9.0    # GUI framework
+
+# Video processing
+ffmpeg-python>=0.2.0  # FFmpeg wrapper
+
+# Image processing
+Pillow>=10.0.0      # Image handling
+scikit-image>=0.21.0 # Advanced image processing
+
+# File handling and utilities
+tqdm>=4.65.0        # Progress bars
+pathlib>=1.0.1      # Path manipulation
+python-dotenv>=1.0.0 # Environment variable management
+
+# Optional - Development dependencies
+# pytest>=7.4.0       # Testing
+# black>=23.7.0       # Code formatting
+# pylint>=2.17.5      # Code linting 
