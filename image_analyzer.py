@@ -163,7 +163,12 @@ def get_video_info(video_path: str) -> dict:
             video_path
         ], capture_output=True, text=True, check=True)
         
-        width, height, frame_rate, total_frames = result.stdout.strip().split(',')
+        # Split the output and handle potential missing values
+        values = result.stdout.strip().split(',')
+        if len(values) < 4:
+            raise RuntimeError(f"Unexpected ffprobe output format: {result.stdout}")
+            
+        width, height, frame_rate, total_frames = values[:4]  # Take first 4 values
         frame_rate = eval(frame_rate)  # This safely evaluates the fraction
         
         return {
@@ -176,3 +181,6 @@ def get_video_info(video_path: str) -> dict:
         logger.error(f"Error getting video info: {e}")
         logger.error(f"ffprobe stderr: {e.stderr}")
         raise RuntimeError(f"Failed to get video info: {e}")
+    except ValueError as e:
+        logger.error(f"Error parsing video info values: {e}")
+        raise RuntimeError(f"Failed to parse video info: {e}")
