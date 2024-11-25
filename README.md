@@ -70,10 +70,7 @@ Windows application for extracting frames from videos and analyzing them for sha
    ```powershell
    pip install -r requirements.txt
    ```
-6. **Run it**
-   ```powershell
-   python main.py
-   ```
+
 ### Config
 
 1. **RealityCapture Integration**
@@ -98,7 +95,11 @@ Windows application for extracting frames from videos and analyzing them for sha
    SOURCE_IMAGES_DIR = "Source Images"
    BEST_IMAGES_DIR = "Best Images"
    ```
-
+**Run it**
+   Do the config below first, then run it. 
+   ```powershell
+   python main.py
+   ```
 ### Troubleshooting
 
 1. **FFmpeg Not Found**
