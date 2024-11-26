@@ -96,7 +96,7 @@ Windows application for extracting frames from videos and analyzing them for sha
    BEST_IMAGES_DIR = "Best Images"
    ```
 **Run it**
-   Do the config below first, then run it. 
+   Do the config first, then run it. 
    ```powershell
    python main.py
    ```
